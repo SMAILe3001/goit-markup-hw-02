@@ -1,0 +1,89 @@
+/* Оснойной колір тексту #212121 */
+/* Додатковий колір тексту #757575 */
+/* Колір наведения #2196F3 */
+/* Колір героя #FFFFFF */
+/* тел и емел rgba(255, 255, 255, 0.6); */
+
+:root{
+    --primary-text-color: #212121;
+    --title-text-color: #757575;
+    --accent-color: #2196F3;
+    --hero-color: #FFFFFF;
+}
+
+body{
+   background: var(--hero-color);
+   color: var(--title-text-color);
+}
+
+.list{
+    list-style: none;
+}
+
+.link{
+    text-decoration: none;
+}
+
+/* Логотип */
+
+.logo{
+    color: var(--accent-color);
+}
+
+.log{
+    color: #000000;
+}
+
+
+/* Навігація сайту */
+
+.site-nav .link{
+    color: var(--primary-text-color);
+}
+
+.site-nav .link:hover, 
+.site-nav .link:focus {
+    color: var(--accent-color);
+}
+
+.site-nav .link.current {
+    color: var(--accent-color);
+}
+
+.adress-nav .link:hover,
+.adress-nav .link:focus {
+    color: var(--accent-color);
+}
+
+/* Заголовок сайту */
+
+.hero{
+    background: #2F303A;
+}
+
+.hero-title{
+    color: var(--hero-color);
+}
+
+/* Секції */
+
+.section-title{
+    color: var(--primary-text-color);
+}
+
+/* Особливості */
+
+.feature-list .title{
+    color: var(--primary-text-color);
+}
+
+/* Команда */
+
+.user-list .title{
+    color:var(--primary-text-color);
+}
+
+.button {
+    color: var(--hero-color);
+    background: var(--accent-color);
+}
