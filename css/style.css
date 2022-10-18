@@ -9,6 +9,9 @@
     --title-text-color: #757575;
     --accent-color: #2196F3;
     --hero-color: #FFFFFF;
+    --portfolio-button: #F5F4FA;
+    --hero-fon: #2F303A;
+    --logo-color: #000000;
 }
 
 body{
@@ -24,6 +27,10 @@ body{
     text-decoration: none;
 }
 
+/* .link:visited {
+    color: var(--hero-color);
+} */
+
 /* Логотип */
 
 .logo{
@@ -31,7 +38,7 @@ body{
 }
 
 .log{
-    color: #000000;
+    color: var(--logo-color);
 }
 
 
@@ -58,7 +65,7 @@ body{
 /* Заголовок сайту */
 
 .hero{
-    background: #2F303A;
+    background: var(--hero-fon);
 }
 
 .hero-title{
@@ -85,5 +92,25 @@ body{
 
 .button {
     color: var(--hero-color);
+    background: var(--accent-color);
+}
+
+/* SCC ПОРТФОЛИО */
+
+.filters {
+    background: var(--portfolio-button);
+}
+
+.filters .title {
+    color: var(--primary-text-color);
+}
+
+.projects .title {
+    color: var(--primary-text-color);
+}
+
+.filters .link:hover,
+.filters .link:focus {
+    color: var(--hero-color);    
     background: var(--accent-color);
 }
