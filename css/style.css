@@ -12,6 +12,7 @@
     --portfolio-button: #F5F4FA;
     --hero-fon: #2F303A;
     --logo-color: #000000;
+    --contact-color: rgba(255, 255, 255, 0.6);
 }
 
 body{
@@ -57,10 +58,17 @@ body{
     color: var(--accent-color);
 }
 
+.adress-nav .link {
+    color: var(--title-text-color);
+}
+
 .adress-nav .link:hover,
 .adress-nav .link:focus {
     color: var(--accent-color);
 }
+
+
+
 
 /* Заголовок сайту */
 
@@ -109,8 +117,29 @@ body{
     color: var(--primary-text-color);
 }
 
-.filters .link:hover,
-.filters .link:focus {
+.filters-button {
+    color: var(--primary-text-color);
+    background: var(--portfolio-button);
+}
+
+.filters-button:hover,
+.filters-button:focus {
     color: var(--hero-color);    
     background: var(--accent-color);
+}
+
+.address .contact {
+    color: var(--contact-color);
+}
+
+.address .link {    
+    color: var(--hero-color);
+}
+
+.address .contact {
+    color: var(--contact-color);
+}
+
+footer {
+    background: var(--hero-fon);
 }
