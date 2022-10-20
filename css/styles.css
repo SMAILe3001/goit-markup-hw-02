@@ -13,8 +13,9 @@
 /* --ЗАГАЛЬНІ ЗМІННІ-- */
 
 body {
-   background: var(--hero-color);
-   color: var(--title-text-color);
+    background: var(--hero-color);
+    color: var(--title-text-color);
+    margin: 0;
 
     font-family: 'Roboto', sans-serif;
     font-weight: 400;
@@ -25,6 +26,9 @@ body {
 /* Видалення крапок списку */
 .list {
     list-style: none;
+
+    margin: 0;
+    padding: 0;
 }
 
 /* видалення підкреслювання ссилок */
@@ -36,24 +40,23 @@ body {
 
 /* Логотип */
 
-.logo{
+.logo {
     color: var(--accent-color);
 
     font-family: 'Raleway';
-        font-weight: 700;
-        font-size: 26px;
-        line-height: 1.2;
-        letter-spacing: 0.03em;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.2;
+    letter-spacing: 0.03em;
 }
 
-.log{
+.logo-black {
     color: var(--logo-color);
 }
 
-
 /* Навігація сайту */
 
-.site-nav .link{
+.site-link {
     color: var(--primary-text-color);
 
     font-weight: 500;
@@ -67,11 +70,11 @@ body {
     color: var(--accent-color);
 }
 
-.site-nav .link.current {
+.link.current {
     color: var(--accent-color);
 }
 
-.adress-nav .link {
+.adress-link {
     color: var(--title-text-color);
 
     font-weight: 500;
@@ -85,19 +88,17 @@ body {
     color: var(--accent-color);
 }
 
-.projects p {
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 1.88;
-    letter-spacing: 0.03em;
-}
-
 /* --ТІЛО ОСНОВНОЇ СТОРІНКИ-- */
 
 /* Заголовок сайту */
 
-.hero{
-    background: var(--hero-fon);
+.hero {
+    background: var(--hero-fon); 
+    text-align: center;
+}
+
+.hero-title {
+    color: var(--hero-color);
 
     font-weight: 900;
     font-size: 44px;
@@ -105,50 +106,6 @@ body {
     text-align: center;
     letter-spacing: 0.06em;
     text-transform: uppercase;
-}
-
-.hero-title{
-    color: var(--hero-color);
-}
-
-/* Секції */
-
-.section-title{
-    color: var(--primary-text-color);
-
-    font-weight: 700;
-    font-size: 36px;
-    line-height: 1.16;
-    text-align: center;
-    letter-spacing: 0.03em;
-}
-
-/* Особливості */
-
-.feature-list .title{
-    color: var(--primary-text-color);
-
-    font-weight: 700;
-    font-size: 14px;
-    line-height: 1.14;
-    letter-spacing: 0.03em;
-    text-transform: uppercase;
-}
-
-/* Команда */
-
-.user-list .title{
-    color:var(--primary-text-color);
-
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 1.19;
-    text-align: center;
-    letter-spacing: 0.03em;
-}
-
-.user-list p {
-    text-align: center;
 }
 
 .button {
@@ -164,19 +121,62 @@ body {
     letter-spacing: 0.06em;
 }
 
-/* -- ТІЛО ПОРТФОЛіО-- */
+/* Секції */
 
-.filters .title {
+.section-title {
     color: var(--primary-text-color);
+
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.16;
+    text-align: center;
+    letter-spacing: 0.03em;
 }
 
-.projects .title {
+/* Особливості */
+
+.feature-title {
+    color: var(--primary-text-color);
+
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+}
+
+/* Команда */
+
+.user-title {
+    color:var(--primary-text-color);
+
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.19;
+    text-align: center;
+    letter-spacing: 0.03em;
+}
+
+.user-desc {
+    text-align: center;
+}
+
+/* -- ТІЛО ПОРТФОЛіО-- */
+
+.projects-title {
     color: var(--primary-text-color);
 
     font-weight: 700;
     font-size: 18px;
     line-height: 2;
     letter-spacing: 0.06em;
+}
+
+.projects-desc {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.88;
+    letter-spacing: 0.03em;
 }
 
 .filters-button {
@@ -200,23 +200,27 @@ body {
 
 /* --ФУТЕР-- */
 
-.address .contact {
-    color: var(--contact-color);
+.footer {
+    background: var(--hero-fon);
 }
 
-.address .link {    
+.logo-white {
     color: var(--hero-color);
+}
+
+.address {
+    font-style: normal;
+}
+
+.address-map {    
+    color: var(--hero-color);
+}
+
+.contact {
+    color: var(--contact-color);
 }
 
 .address .link:hover,
 .address .link:focus {
     color: var(--accent-color);
-}
-
-.address .contact {
-    color: var(--contact-color);
-}
-
-footer {
-    background: var(--hero-fon);
 }
